@@ -1,0 +1,42 @@
+STUFF BAIN DE SANG (tous les équipement seront incassable)
+Les noms des joueurs seront coloré de la meme couleur de leur équipe
+
+stuff de base
+full chainmaill (sauf casque cuir non-coloré) + epée en fer
+
+équipement offensif
+Flamboyance: épée en or tranchant 1 + fire aspect 1 "5$"
+Repousse-vent: épée en bois tranchant 2 + recul 3 "5$"
+Lame de mana: épée en diam's tranchant 2 "10$"
+épée amélioré: épée en fer tranchant 2 "2$"
+Pioche: pioche en pierre, ignore l'armure "7$"
+Ecaille de dragon- Lame**: épée en pierre tranchant 5 "12$"
+Arme antique: hache en pierre "2" 1.9
+Hache de boucher: hache en fer vitesse amélioré "7$" 1.9
+Griffe de harpie: houe en fer tranchant 5 "7$" 1.9
+
+équipement défensif
+Coeur aride: plastron or fire protection 5 + thorn 2 + protection 2 "5$"
+plastron amélioré: plastron chainmail protection 2 "2$"
+Ecaille de dragon- Plastron**: plastron en fer protection 5 "12$"
+Ecaille de dragon- Bouclier**: bouclier rouge (1.9) "12$"
+Armure d'archimage: plastron diam's protection 2 "10$"
+Planche de bois protectrice: bouclier marron "10$" 1.9
+
+équipement utilitaire (coute tous 5$)
+Casque de vitesse*: casque en cuir coloré bleu clair, quand tu le porte, ta vitesse 1
+Casque de force*: casque en cuir coloré rouge, quand tu le porte, ta force 1
+Casque de vol de vie*: casque en cuir coloré mauve, quand tu tue ET que tu le porte, ta instance healt 1 pendant 5/10s (a voir)
+Casque de poison*: casque en cuir vert foncé, quand tu meurt ET que tu le porte, tu donne poison 1 pendant 5/10s (à voir) a un adversaire aléatoire
+Casque de jump boost*: casque en cuir vert clair, quand tu le porte, ta jump boost 1
+Casque de résistance*: casque de cuir gris foncé, quand tu le porte, ta resistence 1
+Casque de regen*: casque en cuir rose, quand tu le porte, ta regen 1
+
+*Il existera une version amélioré de ces casque qui donne l'effet lvl 2 et qui est enchant protection 2 qui coute 10$
+**Si tu porte ces 3 item, ta 20 coeur entier
+
+équipement consomable
+Enderpearl "1$"
+Spalsh potion de damage"2$"
+
+PS: des nouveaux stuff pourrai apparaitre entre temps
