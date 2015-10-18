@@ -9,8 +9,8 @@ import org.bukkit.event.block.Action;
 import org.bukkit.event.player.PlayerInteractEvent;
 
 import fr.ozedev.boutique.Boutique;
-import fr.ozedev.item.Banner;
-import fr.ozedev.menuEquipe.MenuEquipe;
+import fr.ozedev.item.ChooseMap;
+import fr.ozedev.menu.ChooseMapMenu;
 
 public class PlayerInteract implements Listener{
 	@EventHandler
@@ -20,11 +20,8 @@ public class PlayerInteract implements Listener{
 		//si l'action est un clic droit
 		if ((event.getAction().equals(Action.RIGHT_CLICK_AIR)) || (event.getAction().equals(Action.RIGHT_CLICK_BLOCK))){
 			//si l'item est est la banniere
-			if(player.getItemInHand().equals(Banner.getBanner())){
-				//on ouvre le menu de choix d'équipe
-				new MenuEquipe(player);
-			}
 			if(player.getItemInHand().getType().equals(Material.DOUBLE_PLANT)) new Boutique(player);
+			if(player.getItemInHand().equals(ChooseMap.getChooseMap())) ChooseMapMenu.menu(player);
 		}
 		if(!player.getGameMode().equals(GameMode.CREATIVE)) event.setCancelled(true);
 	}

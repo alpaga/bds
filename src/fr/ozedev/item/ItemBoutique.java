@@ -8,14 +8,14 @@ public class ItemBoutique {
 	public static ItemStack getOffensif(){
 		ItemStack item = new ItemStack(Material.DIAMOND_SWORD);
 		ItemMeta itemM = item.getItemMeta();
-		itemM.setDisplayName("งrง6Objet Offensif");
+		itemM.setDisplayName("ยงrยง6Objet Offensif");
 		item.setItemMeta(itemM);
 		return item;
 	}
 	public static ItemStack getDeffensif(){
 		ItemStack item = new ItemStack(Material.DIAMOND_CHESTPLATE);
 		ItemMeta itemM = item.getItemMeta();
-		itemM.setDisplayName("งrง6Objet Deffensif");
+		itemM.setDisplayName("ยงrยง6Objet Deffensif");
 		item.setItemMeta(itemM);
 		return item;
 	}

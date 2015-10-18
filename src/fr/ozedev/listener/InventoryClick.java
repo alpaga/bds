@@ -9,21 +9,13 @@ import org.bukkit.event.inventory.InventoryClickEvent;
 import fr.ozedev.bds.Bds;
 import fr.ozedev.boutique.Deffensif;
 import fr.ozedev.boutique.Offensif;
+import fr.ozedev.item.ChooseMap;
 import fr.ozedev.item.ItemBoutique;
 
 public class InventoryClick implements Listener{
 	@EventHandler
 	public void onInventoryClick(InventoryClickEvent event){
 		Player player = (Player) event.getWhoClicked();
-		//si l'inventaire ou l'on a clické est est l'equipe
-		if(event.getInventory().getName().toString().equals("Equipe")){
-			//on donne l'inventaire
-			Bds.setDefaultInv(player);
-			//et on teleport
-			Bds.setLocationOnTeam(player, event.getCurrentItem().getItemMeta().getDisplayName().toString());
-			//et on le met en mode in game
-			Bds.get(player).setInGame(true);
-		}
 		if(event.getInventory().getName().toString().equals("Boutique")){ 
 			if(event.getCurrentItem().equals(ItemBoutique.getOffensif())) new Offensif(player);
 			if(event.getCurrentItem().equals(ItemBoutique.getDeffensif())) new Deffensif(player);
@@ -33,6 +25,12 @@ public class InventoryClick implements Listener{
 		}
 		if(event.getInventory().getName().toString().equals("Offensif")){
 			Offensif.click(player, event.getCurrentItem());
+		}
+		if(event.getCurrentItem().equals(ChooseMap.getGrandMap())){
+			Bds.get(player).setVote(0);
+		}
+		if(event.getCurrentItem().equals(ChooseMap.getPetitMap())){
+			Bds.get(player).setVote(1);
 		}
 		if(!player.getGameMode().equals(GameMode.CREATIVE)) event.setCancelled(true);
 	}

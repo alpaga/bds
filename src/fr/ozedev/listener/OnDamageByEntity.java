@@ -13,15 +13,15 @@ public class OnDamageByEntity implements Listener {
 	public void onEntityDamageByEntity(EntityDamageByEntityEvent  event){
 		
 		//si c'est un joueur qui a taper
-	    if ((event.getDamager() instanceof Player )&&(event.getEntity() instanceof Player)){
+	    if ((event.getDamager() instanceof Player )&&(event.getEntity() instanceof Player) && Bds.gameStart == true){
 	    	BdsPlayer damager = Bds.get((Player) event.getDamager());
 	    	BdsPlayer victime = Bds.get((Player) event.getEntity());
 	    	
 	    	
-	    	//Si ils sont dans la même team
+	    	//Si ils sont dans la mÂ§me team
 	    	if(damager.getTeam().equals(victime.getTeam())){
 	    		event.setCancelled(true);
-	    		event.getDamager().sendMessage("§aLe joueur §b"+event.getEntity().getName().toString()+"§a est dans votre team impossible de le taper");
+	    		event.getDamager().sendMessage("Â§aLe joueur Â§b"+event.getEntity().getName().toString()+"Â§a est dans votre team impossible de le taper");
 	    	}
 	    }
 	    else{

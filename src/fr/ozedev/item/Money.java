@@ -9,7 +9,7 @@ public class Money {
 	public static ItemStack getMoney(int nombre){
 		ItemStack money = new ItemStack(Material.DOUBLE_PLANT,nombre);
 		ItemMeta moneyMeta = money.getItemMeta();
-		moneyMeta.setDisplayName("ง6Money : "+nombre);
+		moneyMeta.setDisplayName("ยง6Money : "+nombre);
 		moneyMeta.addEnchant(Enchantment.LOOT_BONUS_BLOCKS, nombre, true);
 		money.setItemMeta(moneyMeta);
 		return money;

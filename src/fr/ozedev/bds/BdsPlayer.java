@@ -10,7 +10,11 @@ public class BdsPlayer {
 	private boolean 	inGame			= false;
 	private String		team;
 	private Location	teamLocation;
+	private int 		vote			= 0;
 	
+	
+	public int getVote(){return vote;}
+	public void setVote(int vote){this.vote = vote;}
 	public BdsPlayer(Player player) {
 		this.player = player;
 	}

@@ -15,7 +15,7 @@ public class OnDamage implements Listener{
 		if (event.getEntity() instanceof Player){
 			Player player = (Player) event.getEntity();
 			//si il est tomber ou qu'il est dans le lobby
-			if((event.getCause().equals(DamageCause.FALL)) || (Bds.get(player).getInGame() == false)){
+			if((event.getCause().equals(DamageCause.FALL)) &&(Bds.map == 1) || (Bds.get(player).getInGame() == false)){
 				//on annule les dégat
 				event.setCancelled(true);
 			}

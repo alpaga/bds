@@ -51,7 +51,7 @@ public class Deffensif {
 			player.getInventory().remove(Material.DOUBLE_PLANT);
 			Bds.setMoney(player);
 		}else{
-			player.sendMessage("§aTu n'as pas asser de §6money");
+			player.sendMessage("Â§aTu n'as pas asser de Â§6money");
 		}
 	}
 }
